@@ -1,0 +1,14 @@
+/* font-family: 'Vollkorn', serif;
+font-family: 'Montserrat', sans-serif; */
+:root {
+    --mont: 'Montserrat', sans-serif;
+    --vol: 'Vollkorn', serif;
+}
+
+body {
+    font-family: var(--mont);
+}
+
+.slide1 {
+    
+}
