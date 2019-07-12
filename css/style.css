@@ -128,6 +128,74 @@ h1, h2, h3, h4, h5, h6 {
     left: -36px;
 }
 
+/* home - courses end */
+
+/* testimonial  */
+
+.testimonial {
+    background: url(../img/testimonial.jpg) no-repeat;
+    padding: 80px 0;
+    background-size: cover;
+    background-position: 0 -101px;
+}
+
+.testimonial h4,
+.testimonial h2 {
+    color: #fff;
+    text-shadow: 2px 2px 1px #333;
+} 
+
+.testimonial h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.testimonial .feedback {
+    padding: 20px 35px;
+    background: rgba(0,0,0,0.7);
+    margin: 0 20px;
+    color: #fff;
+}
+
+.testimonial .feedback p {
+    font-size: 12px;
+    overflow: auto;
+    /* float: right; */
+}
+
+.testimonial .feedback p span {
+    display: block;
+}
+
+.testimonial .feedback p span.author {
+    padding-top: 15px;
+}
+
+.testimonial .feedback img {
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.testimonial .feedback img::after {
+    position: absolute;
+    content: '\f10e';
+    font-family: FontAwesome;
+    font-size: 16px;
+    top: 20px;
+    right: -15px;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li button:before {
+    font-size: 25px;
+}
+
+/* testimonial end */
+
 
 /* common css */
 
@@ -159,6 +227,9 @@ h1, h2, h3, h4, h5, h6 {
     .home-main-content-container {
         padding: 35px 15px;
     }
+    .testimonial {
+        padding: 50px 0 60px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -176,11 +247,28 @@ h1, h2, h3, h4, h5, h6 {
     .courses-item span {
         font-size: 20px;
     }
+
+    .testimonial {
+        background-position: center;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .home-main-content-container {
         padding: 35px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial .feedback img {
+        float: none;
+    }
+    .testimonial .feedback {
+        padding: 20px;
+    }
+
+    .testimonial {
+        padding: 20px 0;
     }
 }
 
