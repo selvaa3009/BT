@@ -9,15 +9,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container border">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-xs-12 border d-flex align-items-center">
+    <div class="container border header">
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-md-3 col-xs-12 border d-flex">
                 <a href="#">Logo</a>
             </div>
-            <div class="col-lg-4 col-md-5 col-xs-12 offset-lg-5 offset-md-4 offset-xs-0 border pt-3">
+            <div class="col-lg-4 col-md-6 col-xs-12 offset-lg-5 offset-md-3 offset-xs-0 border pt-3">
                 <ul class="list-inline float-xl-right float-lg-right float-md-right float-sm-left">
                     <li class="list-inline-item mr-3">
                         <a href="#">Home</a>
@@ -36,28 +38,105 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="container banner-container">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="banner-container">
+            <div id="mainCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item slide1 active">
-                        <!-- <img class="d-block w-100" src="./img/slide1.jpg" alt="First slide"> -->
-                        <div class="carousel-text">
-                            Slide1
+                    <div class="carousel-item slider slide1 active">
+                        <div class="container">
+                            <!-- <img class="d-block w-100" src="./img/slide1.jpg" alt="First slide"> -->
+                            <div class="carousel-text">
+                                Slide1
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item slide2">
-                        <!-- <img class="d-block w-100" src="./img/slide2.jpg" alt="Second slide"> -->
-                        <div class="carousel-text">
-                            Slide2
+                    <div class="carousel-item slider slide2">
+                        <div class="container">
+                            <!-- <img class="d-block w-100" src="./img/slide2.jpg" alt="Second slide"> -->
+                            <div class="carousel-text">
+                                Slide2
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item slide3">
-                        <!-- <img class="d-block w-100" src="./img/slide3.jpg" alt="Third slide"> -->
-                        <div class="carousel-text">
-                            Slide3
+                    <div class="carousel-item slider slide3">
+                        <div class="container">
+                            <!-- <img class="d-block w-100" src="./img/slide3.jpg" alt="Third slide"> -->
+                            <div class="carousel-text">
+                                Slide3
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses -->
+
+    <div class="container home-courses bg-dark">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-xs-12">
+                <h2 class="text-white">Courses we teach</h2>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-xs-12">
+                <div class="courses-slider">
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/html.png" alt="HTML">
+                            <span>HTML 5</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/css.png" alt="Css">
+                            <span>Css 3</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/javascript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/jquery.png" alt="jquery">
+                            <span>JQuery</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/sass.png" alt="Sass">
+                            <span>Sass</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/bootstrap.png" alt="bootstrap">
+                            <span>Bootstrap 4</span>
+                        </a>
+                    </div>
+                    <div class="bg-white courses-item">
+                        <a href="#">
+                            <img src="img/angular.png" alt="Angular">
+                            <span>Angular</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container home-main-content-container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
+                <h2>About us</h2>
+                <h1>Welcome to the institute</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam voluptatibus provident ipsa numquam maxime reiciendis, officiis eveniet illo necessitatibus nisi unde, adipisci architecto quaerat sint voluptas eius voluptatem fuga?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum error illum odio quasi eos porro, explicabo corrupti. Ipsum natus quia recusandae accusamus dolores nulla quidem velit. Eaque, provident esse.</p>
+                <a href="#" class="btn btn-dark">Learn more</a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
+                <img class="d-block w-100" src="./img/working.jpg" alt="working">
             </div>
         </div>
     </div>
@@ -72,5 +151,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/code.js"></script>
 </body>
 </html>
